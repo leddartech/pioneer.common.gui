@@ -240,7 +240,7 @@ class PointCloud( CloudBase ):
             #FIXME: horrible hack to use das stuff from leddar_gui
             p =  self._get_package()
             sample = p['das.sample']
-            self.ndarray = sample.point_cloud(referential = None, ignore_orientation=True)
+            self.ndarray = sample.get_point_cloud(referential = None, ignore_orientation=True)
             self.indices.ndarray = np.arange(self.ndarray.shape[0], dtype=np.uint32)
             return
         except:
