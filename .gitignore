@@ -4,3 +4,4 @@
 /pioneer_common_gui.egg-info/
 /.vscode
 Pipfile.lock
+/pioneer/*.so
